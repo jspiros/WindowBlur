@@ -7,11 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <QuartzCore/QuartzCore.h>
 
 void MethodSwizzle(Class aClass, SEL orig_sel, SEL alt_sel);
 
-@interface WindowBlurSIMBL : NSObject {
+@interface WindowBlurWindowHack : NSWindow
+@end
 
-}
-
+@interface WindowBlurSIMBL : NSObject {}
 @end
